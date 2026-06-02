@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Woody AR</title>
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+</head>
+
+<body class="ar-page">
+  <video id="camera" autoplay playsinline muted></video>
+
+  <button class="ar-back" onclick="history.back()">←</button>
+
+  <div class="ar-title">
+    <h1>Woody</h1>
+    <p>Toy Story</p>
+  </div>
+
+  <button class="ar-camera" id="openCaptureBtn">📷</button>
+
+  <button class="hat-btn" id="hatBtn">
+    <img src="images/ar_woody_hat.png" alt="Woody hoed">
+  </button>
+
+  <img src="images/ar_woody_hat.png" id="woodyHat" class="woody-hat" alt="Woody hoed">
+
+  <img src="images/ar_woody.png" alt="Woody AR" class="ar-woody">
+
+  <p class="ar-instruction" id="arInstruction">
+    Tik op Woody om hem tot leven te brengen
+  </p>
+
+  <button class="capture-btn" id="captureBtn">📷</button>
+
+  <canvas id="snapshotCanvas"></canvas>
+  <a id="downloadPhoto" download="woody-ar-foto.png"></a>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>

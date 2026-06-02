@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixar Website</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <h1>Pixar</h1>
+      <img src="images/Luxo_Jr.png" alt="Luxo Jr lamp" class="lamp-img">
+    </div>
+
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="#">Films</a>
+      <a href="#">Personages</a>
+      <a href="#">Fun facts</a>
+      <a href="#">Quiz</a>
+    </nav>
+
+    <div class="right-menu">
+      <div class="search-box">
+        <span class="search-icon">⌕</span>
+        <input type="text" placeholder="Zoeken..." id="searchInput">
+      </div>
+
+      <button class="settings-btn" aria-label="Instellingen">
+        <img src="images/setting.png" alt="Instellingen">
+      </button>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="hero">
+    <div class="hero-banner">
+      <img src="images/homereclame.png" alt="Home reclame">
+    </div>
+  </section>
+
+  <!-- ACTIEKAARTEN -->
+  <section class="actions">
+    <h3>Wat wil je doen?</h3>
+
+    <div class="action-grid">
+      <div class="action-card">
+        <div class="icon">🎬</div>
+        <div>
+          <h4>Films ontdekken</h4>
+          <p>Bekijk alle Pixar films die zijn gemaakt</p>
+        </div>
+      </div>
+
+      <div class="action-card">
+        <div class="icon">👤</div>
+        <div>
+          <h4>Personages ontdekken</h4>
+          <p>Leer alles over leuke personages</p>
+        </div>
+      </div>
+
+      <div class="action-card">
+        <div class="icon">🙂</div>
+        <div>
+          <h4>Fun facts</h4>
+          <p>Leuke weetjes die je nog niet kende</p>
+        </div>
+      </div>
+
+      <div class="action-card">
+        <div class="icon">💡</div>
+        <div>
+          <h4>Doe een quiz</h4>
+          <p>Test je kennis</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <!-- POPULAIRE FILMS -->
+    <section class="panel popular-films">
+      <div class="section-header">
+        <h3>Populaire films</h3>
+        <a href="#">Bekijk alle</a>
+      </div>
+
+      <div class="movie-list">
+        <div class="movie-card">
+          <div class="poster">
+            <img src="images/home-toy-story-film.png" alt="Toy Story">
+          </div>
+          <p>1995 <span>⭐ 8.3</span></p>
+        </div>
+
+        <div class="movie-card">
+          <div class="poster">
+            <img src="images/home-inside-out-film.png" alt="Inside Out">
+          </div>
+          <p>2015 <span>⭐ 8.1</span></p>
+        </div>
+
+        <div class="movie-card">
+          <div class="poster">
+            <img src="images/home-nemo-film.png" alt="Finding Nemo">
+          </div>
+          <p>2003 <span>⭐ 8.2</span></p>
+        </div>
+
+        <button class="small-arrow">›</button>
+      </div>
+    </section>
+
+    <!-- PERSONAGES -->
+    <section class="panel characters">
+      <div class="section-header">
+        <h3>Personages</h3>
+        <a href="#">Bekijk alle</a>
+      </div>
+
+      <div class="character-list">
+
+        <!-- WOODY IS NU KLIKBAAR -->
+        <a href="personage-woody.html" class="character character-link">
+          <div class="avatar woody-bg">
+            <img src="images/home-woody-personage.png" alt="Woody">
+          </div>
+          <p>Woody</p>
+        </a>
+
+        <div class="character">
+          <div class="avatar nemo-bg">
+            <img src="images/home-nemo-personage.png" alt="Nemo">
+          </div>
+          <p>Nemo</p>
+        </div>
+
+        <div class="character">
+          <div class="avatar wall-e-bg">
+            <img src="images/home-wall-e-personage.png" alt="WALL-E">
+          </div>
+          <p>WALL-E</p>
+        </div>
+
+        <div class="character">
+          <div class="avatar miguel-bg">
+            <img src="images/home-miguel-personage.png" alt="Miguel">
+          </div>
+          <p>Miguel</p>
+        </div>
+
+        <div class="character">
+          <div class="avatar luca-bg">
+            <img src="images/home-luca-personage.png" alt="Luca">
+          </div>
+          <p>Luca</p>
+        </div>
+
+        <button class="small-arrow">›</button>
+      </div>
+    </section>
+
+    <!-- TRAILERS -->
+    <section class="trailers">
+      <h3>Trailers</h3>
+
+      <div class="trailers-row">
+        <div class="trailer-box">
+          <img src="images/home-rat-trailer.png" alt="Ratatouille trailer">
+        </div>
+
+        <div class="trailer-box">
+          <img src="images/home-monsterinc-trailer.png" alt="Monsters Inc trailer">
+        </div>
+
+        <button class="trailer-arrow">›</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LUXO BALL -->
+  <button class="ball-btn" aria-label="Luxo Ball">
+    <img src="images/home-Luxo_Ball.png" alt="Luxo Ball">
+  </button>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>

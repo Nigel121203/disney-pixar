@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Woody - Pixar</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="woody-page">
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <h1>Pixar</h1>
+      <img src="images/Luxo_Jr.png" alt="Luxo Jr lamp" class="lamp-img">
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Films</a>
+      <a href="#" class="active">Personages</a>
+      <a href="#">Fun facts</a>
+      <a href="#">Quiz</a>
+    </nav>
+
+    <div class="right-menu">
+      <div class="search-box">
+        <span class="search-icon">⌕</span>
+        <input type="text" placeholder="Zoeken...">
+      </div>
+
+      <button class="settings-btn" aria-label="Instellingen">
+        <img src="images/setting.png" alt="Instellingen">
+      </button>
+    </div>
+  </header>
+
+  <main class="woody-layout">
+
+    <!-- GROTE WOODY FOTO -->
+    <section class="woody-photo-card">
+      <img src="images/personage_woody.png" alt="Woody">
+      <button class="ar-btn" type="button" onclick="window.location.href='ar-woody.html'">📷 AR</button>
+    </section>
+
+    <!-- INFO WOODY -->
+    <section class="woody-info-card">
+      <h2>Woody</h2>
+      <p class="subtitle">Toy Story</p>
+
+      <div class="tag-row">
+        <span>Hoofdpersonage</span>
+        <span>Speelgoed</span>
+      </div>
+
+      <p class="description">
+        Woody is een cowboypop en de favoriete van Andy. Hij is loyaal,
+        moedig en een geboren leider.
+      </p>
+
+      <h3>Eigenschappen</h3>
+
+      <div class="property-grid">
+        <span>Loyaal</span>
+        <span>Moedig</span>
+        <span>Vriendelijk</span>
+        <span>Leiderschap</span>
+      </div>
+    </section>
+
+    <!-- GESCHIEDENIS -->
+    <section class="history-card">
+      <h3>Geschiedenis</h3>
+
+      <div class="history-text">
+        <p>
+          Woody is een traditioneel speelgoed, met een stemkastje dat je
+          aan een touwtje kunt trekken en details die aan een cowboy doen denken.
+        </p>
+
+        <p>
+          Hij heeft lange tijd een ereplaats ingenomen als favoriet onder de
+          speeltjes van de zesjarige Andy totdat Buzz Lightyear neerstort en zijn wereld op zijn kop zet.
+        </p>
+      </div>
+
+      <div class="history-images">
+        <img src="images/personage_woody_geschiedenis_1.png" alt="Geschiedenis 1">
+        <img src="images/personage_woody_geschiedenis_2.png" alt="Geschiedenis 2">
+        <img src="images/personage_woody_geschiedenis_3.png" alt="Geschiedenis 3">
+        <img src="images/personage_woody_geschiedenis_4.png" alt="Geschiedenis 4">
+      </div>
+    </section>
+
+    <!-- STEM -->
+    <section class="voice-card">
+      <h3>karakter stem</h3>
+
+      <div class="audio-row">
+        <button class="play-btn">▶</button>
+        <div class="audio-bar"></div>
+        <span>5 Sec</span>
+      </div>
+    </section>
+
+    <!-- VRIENDEN -->
+    <section class="friends-card">
+      <h3>Vrienden</h3>
+
+      <div class="friends-row">
+        <div class="friend">
+          <div class="friend-avatar">
+            <img src="images/personage_woody_vriend_buzz_lightyear.png" alt="Buzz Lightyear">
+          </div>
+          <p>Buzz Lightyear</p>
+        </div>
+
+        <div class="friend">
+          <div class="friend-avatar">
+            <img src="images/personage_woody_vriend_jessie.png" alt="Jessie">
+          </div>
+          <p>Jessie</p>
+        </div>
+
+        <div class="friend">
+          <div class="friend-avatar">
+            <img src="images/personage_woody_vriend_bullseye.png" alt="Bullseye">
+          </div>
+          <p>Bullseye</p>
+        </div>
+
+        <div class="friend">
+          <div class="friend-avatar">
+            <img src="images/personage_woody_vriend_slinky_dog.png" alt="Slinky Dog">
+          </div>
+          <p>Slinky dog</p>
+        </div>
+
+        <button class="friends-arrow">›</button>
+      </div>
+    </section>
+
+    <!-- FUN FACT -->
+    <section class="woody-fun-card">
+      <h3>🙂 Fun facts</h3>
+      <p>
+        Wist je dat Woody uit Toy Story wordt ingesproken door Tom Hanks?
+      </p>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="woody-quiz-card">
+      <h3>💡 Quiz (Test jezelf)</h3>
+
+      <p>Wat staat er onder de schoen van Woody in Toy Story?</p>
+
+      <div class="quiz-options" id="quizOpties"></div>
+      <p id="quizFeedback"></p>
+    </section>
+
+    <!-- DECORATIE -->
+    <img class="alien-img" src="images/personage_woody_achtergrond_alien.png" alt="Aliens">
+    <img class="potato-img" src="images/personage_woody_achtergrond_potato.png" alt="Mr Potato Head">
+    <img class="slinky-img" src="images/personage_woody_vriend_slinky_dog.png" alt="Slinky dog">
+
+  </main>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>
